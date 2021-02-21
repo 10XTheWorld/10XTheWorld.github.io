@@ -189,7 +189,7 @@ var listQuotes = [
 { quote: "Be yourself; everyone else is already taken.", author: "Oscar Wilde" }];
 
 var currentQuote = 0;
-var progress = setInterval(timerProgress, 10);
+var progress = setInterval(timerProgress, 6);
 var progressWidth = 0;
 
 // var timeDisplayed = 10000;
@@ -274,9 +274,9 @@ setQuote();
 <script>
   // On iOS mobile Safari doing an imediate redirect meant Google Analytics didn't track the user.
   // Adding a 5 second delay before redirecting...
-  setTimeout(function () {
-    window.location.href = 'https://pages.10X.tv/waitlist';
-  }, 10000);
+  //setTimeout(function () {
+  //  window.location.href = 'https://pages.10X.tv/waitlist';
+  //}, 5000);
 </script>
   
 </body>

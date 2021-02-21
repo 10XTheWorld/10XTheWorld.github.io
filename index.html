@@ -138,8 +138,9 @@ blockquote {
 </script>
 </head>
 
-<body>
-
+  
+<body translate="no" >
+  
 <!--
   <h1>Loading...</h1>
   
@@ -153,9 +154,7 @@ blockquote {
 //  }, 3000);
 </script>
 -->
- 
   
-<body translate="no" >
   <div class="container">
   <div class="panel-quote">
     <div class="quote-progress"></div>
@@ -182,11 +181,7 @@ blockquote {
       </div>
     </div>
   </div>
-</div>
-
-  
-<blockquote class="twitter-tweet" data-dnt="true"><p lang="en" dir="ltr">10X HIIT Workout 4<br>348 Mountain climbers<br>39 Elbow plank to push-ups<br>120 Reverse crunches<br>142 Donkey kicks<br>180sec Leg raise hold<a href="https://twitter.com/hashtag/10X?src=hash&amp;ref_src=twsrc%5Etfw">#10X</a> <a href="https://twitter.com/hashtag/PersonalBest?src=hash&amp;ref_src=twsrc%5Etfw">#PersonalBest</a></p>&mdash; Chris Lee Jacob (@ChrisLeeJacob) <a href="https://twitter.com/ChrisLeeJacob/status/1362130095247220736?ref_src=twsrc%5Etfw">February 17, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-  
+</div>  
   
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
 <script id="rendered-js" >
@@ -262,7 +257,7 @@ $(".random").click(function () {
   progressWidth = 0;
 });
 
-/* Twitter API */
+/* Twitter API 
 window.twttr = function (d, s, id) {
   var js,fjs = d.getElementsByTagName(s)[0],
   t = window.twttr || {};
@@ -279,7 +274,7 @@ window.twttr = function (d, s, id) {
 
   return t;
 }(document, "script", "twitter-wjs");
-
+*/
 function tweetQuote() {
   $('#quote-tweet').attr('href', 'https://twitter.com/intent/tweet?hashtags=quote,inspiration&text=' + encodeURIComponent('"' + listQuotes[currentQuote].quote + '" ' + listQuotes[currentQuote].author));
 }

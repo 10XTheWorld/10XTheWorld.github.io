@@ -30,7 +30,7 @@
 
 html {
   height: 100%;
-  background: #333 url("https://unsplash.it/1920") center center no-repeat;
+  background: #333 none center center no-repeat;
   background-size: cover;
 }
 
@@ -186,17 +186,9 @@ blockquote {
 <script id="rendered-js" >
 // https://codepen.io/geoffctn/pen/WGNyoK
 var listQuotes = [
-{ quote: "Do not dwell in the past, do not dream of the future, concentrate the mind on the present moment.", author: "Buddha" },
-{ quote: "Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.", author: "Albert Einstein" },
-{ quote: "Be who you are and say what you feel, because those who mind don't matter, and those who matter don't mind.", author: "Bernard M. Baruch" },
-{ quote: "A room without books is like a body without a soul.", author: "Marcus Tullius Cicero" },
-{ quote: "You only live once, but if you do it right, once is enough.", author: "Mae West" },
-{ quote: "Be the change that you wish to see in the world.", author: "Mahatma Gandhi" },
-{ quote: "If you want to know what a man's like, take a good look at how he treats his inferiors, not his equals.", author: "J.K. Rowling, Harry Potter and the Goblet of Fire" },
-{ quote: "No one can make you feel inferior without your consent.", author: "Eleanor Roosevelt, This is My Story" },
-{ quote: "If you tell the truth, you don't have to remember anything.", author: "Mark Twain" },
-{ quote: "You've gotta dance like there's nobody watching, Love like you'll never be hurt, Sing like there's nobody listening, And live like it's heaven on earth.", author: "William W. Purkey" },
-{ quote: "Be yourself; everyone else is already taken.", author: "Oscar Wilde" }];
+{ quote: "Do not dwell in the past, do not dream of the future, concentrate the mind on the present moment.", author: "Buddha", image: "https://unsplash.it/1920" },
+{ quote: "Two things are infinite: the universe and human stupidity; and I'm not sure about the universe.", author: "Albert Einstein", image: "https://unsplash.it/1024" }
+];
 
 var currentQuote = 0;
 var progress = setInterval(timerProgress, 6);
@@ -218,6 +210,7 @@ function timerProgress() {
 function setQuote() {
   $(".quote").html('"' + listQuotes[currentQuote].quote + '"');
   $(".author-name").html(listQuotes[currentQuote].author);
+  $("html").css('background-image', 'url(' + listQuotes[currentQuote].image + ')');
   tweetQuote();
 }
 

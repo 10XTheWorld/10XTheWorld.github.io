@@ -72,7 +72,7 @@ a:hover {
   max-width: 600px;
   margin: auto;
   box-sizing: border-box;
-  background-color: #fff;
+  background-color: rgba(255,255,255,0.8);
 }
 
 .social-share {
@@ -117,7 +117,7 @@ blockquote {
   background-color: inherit;
   color: #333;
   border: none;
-  opacity: .5;
+  opacity: .6;
   text-align: center;
   display: block;
   width: 100%;
@@ -282,7 +282,7 @@ function tweetQuote() {
   $('#quote-tweet').attr('href', 'https://twitter.com/intent/tweet?hashtags=quote,inspiration&text=' + encodeURIComponent('"' + listQuotes[currentQuote].quote + '" ' + listQuotes[currentQuote].author));
 }
 
-setQuote();
+getRandomQuote();
 </script>
   
 <script>

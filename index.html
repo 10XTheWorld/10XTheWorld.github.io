@@ -42,146 +42,168 @@
   <meta name="msapplication-TileColor" content="#00a300">
   <meta name="theme-color" content="#ffffff">
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-55KHG8FVMQ"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-55KHG8FVMQ');
-</script>
-
-<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
   
-  
-<style>
-* {
-  box-sizing: border-box;
-}
+  <style>
+  * {
+    box-sizing: border-box;
+  }
 
-html {
-  height: 100%;
-  background: #333 none center center no-repeat;
-  background-size: cover;
-}
+  html {
+    height: 100%;
+    background: #333 none center center no-repeat;
+    background-size: cover;
+  }
 
-body {
-  color: #333;
-  font-family: "Montserrat", serif;
-}
+  body {
+    color: #333;
+    font-family: "Montserrat", serif;
+  }
 
-button {
-  background-color: inherit;
-  color: #333;
-  border: none;
-  opacity: .3;
-}
+  button {
+    background-color: inherit;
+    color: #333;
+    border: none;
+    opacity: .3;
+  }
 
-button:hover {
-  opacity: 1;
-}
+  button:hover {
+    opacity: 1;
+  }
 
-a {
-  text-decoration: none;
-  opacity: .3;
-}
+  a {
+    text-decoration: none;
+    opacity: .3;
+  }
 
-a:hover {
-  opacity: 1;
-}
+  a:hover {
+    opacity: 1;
+  }
 
-.container {
-  margin: 0 auto;
-}
+  .container {
+    margin: 0 auto;
+  }
 
-.panel-quote {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  min-width: 400px;
-  max-width: 600px;
-  margin: auto;
-  box-sizing: border-box;
-  background-color: rgba(255,255,255,0.8);
-}
-
-.social-share {
-  text-align: center;
-}
-
-.social-share i {
-  color: #333;
-}
-
-.quote-progress {
-  width: 0;
-  height: 3px;
-  background-color: #333;
-}
-
-blockquote {
-  padding: 30px;
-  font-size: 2em;
-}
-
-.quote {
-  font-family: "Crimson Text", serif;
-  font-style: italic;
-}
-
-.author {
-  font-size: 0.6em;
-  font-weight: lighter;
-  text-align: right;
-}
-
-/* Quote Navigation */
-.quote-nav {
-  display: flex;
-  align-items: stretch;
-  width: 100%;
-  padding-bottom: 30px;
-}
-
-.skip {
-  background-color: inherit;
-  color: #3BCD62;
-  border: none;
-  opacity: 1;
-  text-align: center;
-  display: block;
-  width: 100%;
-  font-weight: bold;
-}
-  
-.previous {
-  margin: auto;
-}
-
-.next {
-  margin: auto;
-}
-
-/* Media Queries */
-@media screen and (max-width: 800px) {
   .panel-quote {
-    min-width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 400px;
+    max-width: 600px;
+    margin: auto;
+    box-sizing: border-box;
+    background-color: rgba(255,255,255,0.8);
   }
-  
-  blockquote {
-    font-size: 1.5em;
-  }
-}
-</style>
 
-<script>
-  window.console = window.console || function(t) {};
-</script>
+  .social-share {
+    text-align: center;
+  }
+
+  .social-share i {
+    color: #333;
+  }
+
+  .quote-progress {
+    width: 0;
+    height: 3px;
+    background-color: #333;
+  }
+
+  blockquote {
+    padding: 30px;
+    font-size: 2em;
+  }
+
+  .quote {
+    font-family: "Crimson Text", serif;
+    font-style: italic;
+  }
+
+  .author {
+    font-size: 0.6em;
+    font-weight: lighter;
+    text-align: right;
+  }
+
+  /* Quote Navigation */
+  .quote-nav {
+    display: flex;
+    align-items: stretch;
+    width: 100%;
+    padding-bottom: 30px;
+  }
+
+  .skip {
+    background-color: inherit;
+    color: #3BCD62;
+    border: none;
+    opacity: 1;
+    text-align: center;
+    display: block;
+    width: 100%;
+    font-weight: bold;
+  }
+
+  .previous {
+    margin: auto;
+  }
+
+  .next {
+    margin: auto;
+  }
+
+  /* Media Queries */
+  @media screen and (max-width: 800px) {
+    .panel-quote {
+      min-width: 100%;
+    }
+
+    blockquote {
+      font-size: 1.5em;
+    }
+  }
+  </style>
+
+  <script>
+    window.console = window.console || function(t) {};
+  </script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-55KHG8FVMQ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-55KHG8FVMQ');
+  </script>
+  
+  <!-- Pinterest Tag -->
+  <script>
+  !function(e){if(!window.pintrk){window.pintrk = function () {
+  window.pintrk.queue.push(Array.prototype.slice.call(arguments))};var
+    n=window.pintrk;n.queue=[],n.version="3.0";var
+    t=document.createElement("script");t.async=!0,t.src=e;var
+    r=document.getElementsByTagName("script")[0];
+    r.parentNode.insertBefore(t,r)}}("https://s.pinimg.com/ct/core.js");
+  pintrk('load', '2614367920325', {em: '<user_email_address>'});
+  pintrk('page');
+  </script>
+  <noscript>
+  <img height="1" width="1" style="display:none;" alt=""
+    src="https://ct.pinterest.com/v3/?event=init&tid=2614367920325&pd[em]=<hashed_email_address>&noscript=1" />
+  </noscript>
+  <!-- end Pinterest Tag -->
+  <script>
+  pintrk('track', 'pagevisit', {
+    property: 'Homepage'
+  });
+  </script>
+  
 </head>
 
   

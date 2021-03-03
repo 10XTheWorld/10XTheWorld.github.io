@@ -203,7 +203,7 @@
         <p class="author">- <span class="author-name"></span></p>
       </blockquote>
       <div class="quote-nav">
-        <a class="skip" href="https://www.10X.tv/waitlist">Skip</a>
+        <a class="skip" href="https://www.10X.tv/signup">Skip</a>
 <!--
         <button class="previous">
           <i class="fa fa-long-arrow-left" aria-hidden="true"></i>
@@ -240,7 +240,7 @@ var listQuotes = [
 ];
 
 var currentQuote = 0;
-var progress = setInterval(timerProgress, 6);
+var progress = setInterval(timerProgress, 6); // 6 seconds
 var progressWidth = 0;
 
 // var timeDisplayed = 10000;
@@ -298,24 +298,6 @@ $(".random").click(function () {
   progressWidth = 0;
 });
 
-/* Twitter API 
-window.twttr = function (d, s, id) {
-  var js,fjs = d.getElementsByTagName(s)[0],
-  t = window.twttr || {};
-  if (d.getElementById(id)) return t;
-  js = d.createElement(s);
-  js.id = id;
-  js.src = "https://platform.twitter.com/widgets.js";
-  fjs.parentNode.insertBefore(js, fjs);
-
-  t._e = [];
-  t.ready = function (f) {
-    t._e.push(f);
-  };
-
-  return t;
-}(document, "script", "twitter-wjs");
-*/
 function tweetQuote() {
   $('#quote-tweet').attr('href', 'https://twitter.com/intent/tweet?hashtags=10X,quote&text=' + encodeURIComponent('"' + listQuotes[currentQuote].quote + '" ' + listQuotes[currentQuote].author));
 }
@@ -324,11 +306,11 @@ getRandomQuote();
 </script>
   
 <script>
-  // On iOS mobile Safari doing an imediate redirect meant Google Analytics didn't track the user.
-  // Adding a 5 second delay before redirecting...
-  //setTimeout(function () {
-  //  window.location.href = 'https://www.10X.tv/waitlist';
-  //}, 5000);
+//   On iOS mobile Safari doing an imediate redirect meant Google Analytics didn't track the user.
+//   Adding a 5.5 second delay before redirecting...
+  setTimeout(function () {
+   window.location.href = 'https://www.10X.tv/signup';
+  }, 5500);
 </script>
   
 </body>
